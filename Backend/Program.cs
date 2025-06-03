@@ -18,7 +18,7 @@ builder.Services.AddCors(options =>
     options.AddDefaultPolicy(
         policy =>
         {
-            policy.WithOrigins("http://localhost:8000", "https://front.marina-and-maxin-wedding-020825.ru/")
+            policy.WithOrigins("http://localhost:8000", "https://front.marina-and-maxin-wedding-020825.ru")
                 .AllowAnyHeader();
         });
 });
