@@ -12,7 +12,7 @@
 		let email = $("#email").val();
 		let comment = $("#comment").val();
 
-		fetch('https://localhost:7218/forma', {
+		fetch('https://back.marina-and-maxin-wedding-020825.ru/forma', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json;charset=utf-8'
