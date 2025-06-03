@@ -6,17 +6,18 @@
 -->
 <html>
 	<head>
-		<title>Свадьба марины и максима</title>
+		<title>Свадьба Марины и Максима</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<section id="header">
 				<header class="major">
-					<h1>ПРИГЛАШАЕМ НА СВАДЬБУ</h1>
+					<h1>ПРИГЛАШАЕМ НА СВАДЬБУ МАРИНЫ И МАКСИМА</h1>
 					<p> 02.08.25</p>
 				</header>
 				<div class="container">
@@ -422,13 +423,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				<div class="container">
 					<header class="major">
 						<h2>АНКЕТА</h2>
-                        <p>Если вы будете не одни, а прибудете со второй половинкой, напишите несколько имен, пожалуйста.</p>
+                        <p>Просьба подтвердить присутствие до 10.07.25.<br>Если вы будете не одни, а прибудете со второй половинкой, напишите несколько имен, пожалуйста.</p>
 					</header>
 					<form method="post" action="#" id="forma">
 						<div class="row gtr-uniform">
-							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Имя" /></div>
-							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-							<div class="col-12"><textarea name="comment" id="comment" placeholder="Задайте ваш вопрос, в случае необходимости" rows="4"></textarea></div>
+							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Имя / имена (Обязательно)" /></div>
+							<div class="col-6 col-12-xsmall"><input type="text" name="email" id="email" placeholder="Email (Необязательно)" /></div>
+							<div class="col-12"><textarea name="comment" id="comment" placeholder="Задайте ваш вопрос, в случае необходимости (Необязательно)" rows="4"></textarea></div>
 							<div class="col-12">
 								<ul class="actions special">
 									<li><input type="submit" value="ПОДТВЕРДИТЬ ПРИСУТСТВИЕ" class="primary" id="submitButon" /></li>
@@ -459,6 +460,16 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            <script>
+        document.getElementById('submitButon').addEventListener('click', function() {
+            Swal.fire({
+                title: 'Успех!',
+                text: 'Вы подтвердили участие!',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        });
+    </script>
 
 	</body>
 </html>

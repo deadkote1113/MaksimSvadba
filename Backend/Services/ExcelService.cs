@@ -19,7 +19,7 @@ public class ExcelService
 
         result.AppendLine("Имя;Почта;Комментарий");
         foreach (var forma in formas)
-            if(!string.IsNullOrEmpty(forma.Name) && !string.IsNullOrEmpty(forma.Email))
+            if(!string.IsNullOrEmpty(forma.Name))
                 result.AppendLine($"{forma.Name.Trim()};{forma.Email.Trim()};{forma.Comment}");
         
         return Encoding.UTF8.GetBytes(result.ToString());
